@@ -1,0 +1,39 @@
+@import "../../res/variables.less";
+.wrapper {
+    position: relative;
+    display: inline-block;
+    min-width: 120px;
+    padding: 4px;
+    background-color: @global-theme-text;
+    color: @global-text;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+}
+.selectList {
+    position: absolute;
+    display: none;
+    min-width: 120px;
+    background-color: @global-theme-text;
+    border-top: 1px solid @global-mid-bg;
+    color: @global-text;
+    font-size: 12px;
+    text-align: left;
+    z-index: 1;
+}
+.selectList_open {
+    composes: selectList;
+    display: block;
+}
+.line {
+    display: block;
+    padding: 4px;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+}

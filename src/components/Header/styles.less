@@ -1,0 +1,28 @@
+@import "../../res/variables.less";
+.header {
+    padding: 16px;
+    background-color: @global-bg;
+    color: @global-theme-text;
+    font-size: 20px;
+    text-align: center; 
+}
+.filter {
+    position: absolute;
+    display: block;
+    right: 16px;
+    top: 12px;
+	width: 24px;
+	height: 24px;
+	background: url('../../res/img/svg/filter.svg') no-repeat;
+	background-size: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: .6;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.filter_active {
+    composes: filter;
+    opacity: 1;
+}

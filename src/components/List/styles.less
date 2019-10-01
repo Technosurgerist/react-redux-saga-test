@@ -1,0 +1,71 @@
+@import "../../res/variables.less";
+.wrapper {
+    height: 100%;
+    padding: 20px;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.line {
+    display: block;
+    position: relative;
+    margin: 12px 0;
+    padding: 16px;
+    background: @global-dark-bg;
+    border-radius: 20px;
+}
+.title {
+    margin-bottom: 8px;
+    font-size: 16px;
+    & a {
+        color: inherit;
+    }
+}
+.stars {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: @global-theme-yellow;
+    font-size: 16px;
+}
+.date {
+    color: @global-text-mid;
+    font-size: 12px;
+}
+.midtext {
+    display: block;
+    font-size: 12px;
+}
+
+.textinput {
+    display: block;
+    max-width: 480px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: 1px solid @global-tabs-border;
+    border-radius: 20px;
+    color: @global-text;
+    text-align: left;
+    text-decoration: none;
+}
+.button {
+    composes: textinput;
+    background-color: @global-mid-bg;
+    color: @global-theme-text;
+    text-align: center;
+    cursor: pointer;
+}
+.remove {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid @global-tabs-border;
+    border-radius: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+}
